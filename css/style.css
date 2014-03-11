@@ -75,7 +75,13 @@ body{
 	background-color:white;
 	box-shadow: 0px 0px 30px #444444;
 }
-.main div{
+.main h1{
+	margin-left:12%;
+	margin-top:20px;
+	font-size:2em;
+	text-shadow: 3px 1px 1px hsla(140,3%,26%,0.25);
+}
+.main section{
 	padding:36px 5%;
 }
 
@@ -109,7 +115,7 @@ body{
 	color:#888;
 }
 
-@media screen and (max-width:1020px){
+@media screen and (max-width:1026px){
 	.header{
 		width:94%;
 		height:48px;
@@ -126,6 +132,9 @@ body{
 	.main{
 		margin-left:0;
 		width:100%;
+	}
+	.main ul li{
+		padding-top:20px;
 	}
 	.footer{
 		margin:0 auto;

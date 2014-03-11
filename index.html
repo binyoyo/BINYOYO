@@ -7,8 +7,8 @@
 		<script src="js/jquery.js"></script>
 	</head>
 	<body>
-		<div class="header">
-			<div class="logo">
+		<header class="header">
+			<div class="logo" role="banner">
 				<span class="user_image">
 				<img src="images/user_image.jpg">
 				</span>
@@ -16,19 +16,20 @@
 				<span class="user_job">程序猿</span>
 			</div><!-- /logo -->
 
-			<div class="nav">
+			<nav class="nav" role="navigation">
 				<ul >
-					<li><a href=".one" title="" class="active">Blog</a></li>
-					<li><a href=".two" title="">Life</a></li>
-					<li><a href=".three" title="">show</a></li>
-					<li><a href=".four" title="">Me</a></li>
+					<li><a href=".blog" title="blog" class="active">Blog</a></li>
+					<li><a href=".life" title="life">Life</a></li>
+					<li><a href=".show" title="show">show</a></li>
+					<li><a href=".me" title="me">Me</a></li>
 					
 				</ul>
-			</div><!-- /nav -->
+			</nav><!-- /nav -->
 
-		</div><!-- /header -->
-		<div  class="main">
-			<div class="one">
+		</header><!-- /header -->
+		<section  class="main" role="main">
+			<section class="blog">
+				<h1>My Blog</h1>
 				<ul class="artical">
 					<li>
 						<h2><a href="" title="1">CSS3动画详解</a></h2>
@@ -53,9 +54,10 @@
 					
 				</ul><!-- / -->
 				
-			</div><!-- /what I do -->
+			</section><!-- /what I do -->
 
-			<div class="two">
+			<section class="life">
+				<h1>LIFE</h1>
 				<ul class="artical">
 					<li>
 						<h2><a href="" title="1">CSS3动画详解</a></h2>
@@ -80,9 +82,10 @@
 					
 				</ul>
 				
-			</div><!-- /my work -->
+			</section><!-- /my work -->
 
-			<div class="three">
+			<section class="show">
+				<h1>SHOW</h1>
 				<ul class="artical">
 					<li>
 						<h2><a href="" title="1">CSS3动画详解</a></h2>
@@ -106,9 +109,10 @@
 					</li>
 					
 				</ul>
-			</div><!-- /show -->
+			</section><!-- /show -->
 
-			<div class="four">
+			<section class="me">
+				<h1>ME</h1>
 				<ul class="artical">
 					<li>
 						<h2><a href="" title="1">CSS3动画详解</a></h2>
@@ -132,15 +136,15 @@
 					</li>
 					
 				</ul>
-			</div><!-- /About me -->
-		</div><!-- /主框架 -->
+			</section><!-- /About me -->
+		</section><!-- /主框架 -->
 
-		<div class="footer">
+		<footer class="footer">
 			<p>© 2014 BINYOYO.</p>
 			<p> MY Github:
 				<a href="www.github.com/binyoyo" title="">www.github.com/binyoyo</a>
 			</p>		
-		</div><!-- / -->		
+		</footer><!-- / -->		
 		<script src="js/index.js" type="text/javascript" charset="utf-8" async defer></script>
 		<script src="js/binyoyo.js"></script>
 	</body>

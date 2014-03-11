@@ -20,12 +20,15 @@ $(function(){
                         }
                     }
         }
+        if ($("html, body").is(":animated"))
+                return false;
+
         $navA.removeClass("active");
         $navA.eq(index-1).addClass("active");
 	})
 	$navA.click(function(b){
 		if ($("html, body").is(":animated"))
-                return !1;
+                return false;
 
 		$navA.removeClass("active");
 		var d = $(this), e = $(d.attr("href"));
@@ -36,6 +39,13 @@ $(function(){
 		});
     
 	$(window).on("resize", function() {
-            $(".nav:visible").length && $navA.filter(".active").triggerHandler("click")
+        $(".nav:visible").length && $navA.filter(".active").triggerHandler("click");
+
+        navScroll=[];
+		$navA.each(function(){
+			var top=$($(this).attr("href")).offset().top;
+			navScroll.push(top);
+			})
+        
         })
 })
