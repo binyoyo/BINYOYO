@@ -1,0 +1,100 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+body{
+	background-color:#e8e8e8;
+	margin:0 10%;
+	font-family: "微软雅黑","Source Sans Pro", "sans-serif";
+	font-size:16px;
+}
+a,li{
+	text-decoration:none;
+	list-style:none;
+}
+
+
+/*head部分*/
+.header{
+	position:fixed;
+	background:#222729;
+	width:80%;
+	height:48px;
+	top:0;
+	text-align:center;
+	box-shadow: 0px 0px 15px #000;
+}	
+.nav ul{
+	list-style:none;
+	padding:0;
+}
+.nav li{
+	float:left;
+	width:25%;
+}
+
+.nav ul li a{
+	display: block;
+	padding:12px 40px 12px 25px;
+	font-size:1.1em;
+	color:#adadad;
+}
+.nav ul li a:hover{
+	background-color: #1a1a1a;
+	color: #fff;
+	box-shadow: inset 0 0 0.25em 0 rgba(0,0,0,0.125);
+}
+
+.list_nav{
+	float:right;
+	line-height:2em;
+	margin:10% 10% 0 0;
+	width: 200px;
+}
+.list_nav h1{
+	font-size:1.3em;
+}
+.list_nav div{
+	border-left: 1px solid #cccccc;
+	padding-left:15px;
+}
+.list_nav li{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width:180px;
+}
+
+
+.footer{
+	margin:0 auto;
+	width:80%;
+	text-align:center;
+	font-size:0.8em;
+}
+.footer a{
+	color:#888;
+
+}
+@media screen and (max-width:1020px){
+	body{
+		margin:0 3%;
+	}
+	.header{
+		width:94%;
+	}
+	.page{
+		width:100%;
+	}
+	.article{
+		width:90%;
+	}
+	.list_nav{
+		display: none;
+	}
+}

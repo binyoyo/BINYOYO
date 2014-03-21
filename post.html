@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+		<meta charset="utf-8">
+		<title>post</title>
+		<link rel="stylesheet" href="css/post.css">
+		<link rel="stylesheet" href="css/default.css">
+	</head>
+	<body style="">		
+		<div class="header">
+			<div class="nav">
+				<ul>
+					<li><a href="index.html" class="active">HOME</a></li>
+					<li><a href="page.html">Blog</a></li>
+					<li><a href="page.html">Life</a></li>
+					<li><a href="page.html">Me</a></li>
+					
+				</ul>
+			</div><!-- /nav -->
+
+		</div><!-- /header -->	
+		<div class="main">
+			<!-- /右侧文章推荐 -->
+			<div class="list_nav">
+				<h1>Blog</h1>
+				<div class="list">
+					<ul>
+						<li><a href="post.html">一些js问题的小总结</a></li>
+                        <li><a href="post.html">产品经理 游走于商业和技术之间</a></li>
+                        <li><a href="post.html">自己做的一些css笔记</a></li>
+                        <li><a href="post.html">坑爹的IE，在z-index的问题</a></li>
+                                		
+					</ul><!-- / -->
+				</div>
+
+				<h1>Life</h1>
+				<div class="list">
+					<ul>
+						<li><h2><a href="post.html">一些js问题的小总结</a></h2>
+                        </li>
+                        <li><h2><a href="post.html">产品经理 游走于商业和技术之间</a></h2>
+						</li>
+                        <li><h2><a href="post.html">自己做的一些css笔记</a></h2>
+						</li>
+                        <li><h2><a href="post.html">坑爹的IE，在z-index的问题</a></h2>
+						</li>
+                                		
+					</ul><!-- / -->
+				</div>
+		   </div>
+		<!-- /文章列表-->
+	<div class="article">
+		<h2>自己做的一些css笔记</h2>
+		<p class="meta">13 Jan 2013</p>
+		<h2>行内元素和块级元素</h2>
+		<p>块级元素占着整行，是垂直方向的。行内元素可以出现在同一直线上和同一行中。</p>
+		<p>块级元素：div、li、p、form、table</p>
+		<ul>
+			<li>在新行上开始；</li>
+			<li>行高以及外边距和内边距都可控制；</li>
+			<li>宽度缺省是它的容器的100%，除非设定一个宽度。</li>
+			<li>它可以容纳行内元素和其他块元素</li>
+		</ul>
+
+
+		<p>行内元素：p、img、span、label、input</p>
+
+		<ul>
+			<li>和其他元素都在一行上；</li>
+			<li>高，行高及外边距和内边距不可改变；</li>
+			<li>宽度就是它的文字或图片的宽度</li>
+			<li>行内元素只能容纳文本或者其他行内元素</li>
+		</ul>
+
+		<h2>css盒模型</h2>
+		<p>页面的每个元素都是一个矩形框，包括内容、内边距、边框、外边框，盒模型指定元素如何显示和交互。</p>
+		<p>外边距是透明的，一般用来控制元素的间距</p>
+		<p>标准模式下：</p>
+
+		<ul>
+			<li>盒宽度=content的width+左右内边距+左右边框</li>
+			<li>盒高度=content的height+上下内边距+上下边框</li>
+		</ul>
+		<p>混杂模式下：</p>
+
+		<ul>
+			<li>盒宽度=css中设定的width</li>
+			<li>盒高度=css中设定的height</li>
+		</ul>
+		<p>PS:如果没有overflow，盒子内容、内边框、边框的值大于设定值，盒子会被撑大。</p>
+
+
+		<h2>Doctype严格模式与混杂模式</h2>
+		<p>Doctype是在标准页面标签前的文档声明，主要是告诉浏览器使用什么html和xhtml的规格，然后让浏览器按照什么规格解释标签和css。不同的文档模式主要影响CSS表现内容和浏览器对合模型的解析。</p>
+		<p>xhtml主要有3种声明：</p>
+		<ul>
+			<li>过渡的（Transitional）</li>
+			<li>严谨的（Strict）</li>
+			<li>框架的（franmeset）</li>
+		</ul>
+		<p>混杂模式是模拟老式浏览器的行为，让老式浏览器也能正常工作，是一种比较宽松的向后兼容模式。</p>
+		<p>触发混杂模式：文档开头处没有文档类型声明，浏览器则会开启混杂模式。</p>
+		<p>PS：混杂模式导致浏览器表现不一，不推荐使用。</p>
+		
+		<h2>position中的absolute和fixed两个属性的区别</h2>
+		<p>fixed生成绝对定位的元素，相对于浏览器窗口进行定位。设置的top、left属性都将是该元素与浏览器之间的距离。例如：一些网站左侧的固定导航</p>
+		<p>absolute生成绝对定位的元素，相对于static定位以外的第一个父元素进行定位</p>
+		
+	</div>
+</div>		
+		<div class="footer">
+			<p>© 2014 BINYOYO.</p>
+			<p> MY Github:
+				<a href="www.github.com/binyoyo" title="">www.github.com/binyoyo</a>
+			</p>		
+		</div><!-- /footer -->		
+
+	
+</body>
+
+</html>

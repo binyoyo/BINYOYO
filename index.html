@@ -1,152 +1,118 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>blog</title>
-		<link rel="stylesheet" href="css/style.css">
-		<script src="js/jquery.js"></script>
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+		  <meta charset="utf-8">
+		  <title>blog</title>
+		  <script src="js/jquery.js"></script>
+		  <link rel="stylesheet" href="css/index.css">
 	</head>
 	<body>
-		<header class="header">
-			<div class="logo" role="banner">
-				<span class="user_image">
-				<img src="images/user_image.jpg">
-				</span>
-				<h1 class="user_name">Binyoyo</h1>
-				<span class="user_job">程序猿</span>
-			</div><!-- /logo -->
+      <div class="overlay">
+            <div class="log">
+              <h1>BINYOYO</h1>
+              <h2>woo!..welcome</h2>
+              <div class="loging">
+                <a href="#">Come in</a>
+              </div>
+            </div>
+      </div>    
+<div class="header">
+   <div class="logo">
+      <span class="user_image">
+        <img src="images/user_image.jpg">
+        </span>
+        <h1 class="user_name">Binyoyo</h1>
+        <span class="user_job">程序猿</span>
+    </div><!-- /logo -->
+     <div class="nav">
+        <ul>
+        <li><a href="#" title=".blog" class="active">HOME</a></li>
+        <li><a href="page.html" title=".blog">Blog</a></li>
+        <li><a href="page.html" title=".life">Life</a></li>
+        <li><a href="page.html" title=".me">Me</a></li>        
+        </ul> 
+   </div><!-- /nav -->
 
-			<nav class="nav" role="navigation">
-				<ul >
-					<li><a href=".blog" title="blog" class="active">Blog</a></li>
-					<li><a href=".life" title="life">Life</a></li>
-					<li><a href=".show" title="show">show</a></li>
-					<li><a href=".me" title="me">Me</a></li>
-					
-				</ul>
-			</nav><!-- /nav -->
+</div>
+<!-- /header -->
 
-		</header><!-- /header -->
-		<section  class="main" role="main">
-			<section class="blog">
-				<h1>My Blog</h1>
-				<ul class="artical">
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					
-				</ul><!-- / -->
-				
-			</section><!-- /what I do -->
+<div class="main">
+     <div class="blog">
+        <h1><a href="page.html">Blog</a></h1>
+        <h3><a href="page.html">>>More</a></h3>
+        <ul class="artical">
+        
+        <li>
+              <h2><a href="post.html">一些js问题的小总结</a></h2>
+              <time>February 11, 2013</time>
+              <p>翻看js书籍和敲代码时候遇到的一些问题，查询资料后做了一些总结。</p>
+        </li>
+        
+        <li>
+              <h2><a href="post.html">自己做的一些css笔记</a></h2>
+              <time>January 13, 2013</time>
+              <p>对css有了一些了解，做了一些笔记，包括盒模型的理解，块级元素、行内元素，position中的absolute和fixed的区别</p>
+        </li>
+        
+        <li>
+              <h2><a href="post.html">坑爹的IE，在z-index的问题</a></h2>
+              <time>November  7, 2012</time>
+              <p>写demo的时候遇到，ie6的bug，设置层级z-index不起作用了，网上查阅了些资料，自己记录一下。</p>
+        </li>
+        <li>
+           
+     </li></ul>
+    </div><!-- /blog -->
+     <div class="life">
+        <h1><a href="page.html">Life</a></h1>
+        <h3><a href="page.html">>>More</a></h3>
+        <ul class="artical">            
+             <li>
+             <h2><a href="post.html">产品经理 游走于商业和技术之间</a></h2>
+             <time>January 23, 2013</time>
+             <p>一个产品经理的性格很奇特，做技术显得太外向，做销售又太内向。IT男觉得你是业务人员，市场销售觉得我们是技术人员。你总是这样，游走于商业与技术之间。</p>
+              </li>
+        
+              <li>
+                  <h2><a href="post.html">自己做的一些css笔记</a></h2>
+                  <time>January 13, 2013</time>
+                  <p>对css有了一些了解，做了一些笔记，包括盒模型的理解，块级元素、行内元素，position中的absolute和fixed的区别</p>
+              </li>
 
-			<section class="life">
-				<h1>LIFE</h1>
-				<ul class="artical">
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					
-				</ul>
-				
-			</section><!-- /my work -->
-
-			<section class="show">
-				<h1>SHOW</h1>
-				<ul class="artical">
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					
-				</ul>
-			</section><!-- /show -->
-
-			<section class="me">
-				<h1>ME</h1>
-				<ul class="artical">
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					<li>
-						<h2><a href="" title="1">CSS3动画详解</a></h2>
-						<p>随着低版本IE份额下降，以及移动端流量的增长，在项目中也可以大胆使用CSS3动画来增强体验和提高产品的优雅程度，对那些不支持的浏览器也不用再费心去做更多兼容，所以，我们来研究下CSS3动画，到底应该怎么用。
-						</p>
-					</li>
-					
-				</ul>
-			</section><!-- /About me -->
-		</section><!-- /主框架 -->
-
-		<footer class="footer">
-			<p>© 2014 BINYOYO.</p>
-			<p> MY Github:
-				<a href="www.github.com/binyoyo" title="">www.github.com/binyoyo</a>
-			</p>		
-		</footer><!-- / -->		
-		<script src="js/index.js" type="text/javascript" charset="utf-8" async defer></script>
-		<script src="js/binyoyo.js"></script>
-	</body>
-</ht
-ml>
+              <li>
+             <h2><a href="post.html">产品经理 游走于商业和技术之间</a></h2>
+             <time>January 23, 2013</time>
+             <p>一个产品经理的性格很奇特，做技术显得太外向，做销售又太内向。IT男觉得你是业务人员，市场销售觉得我们是技术人员。你总是这样，游走于商业与技术之间。</p>
+              </li>
+              <li>
+             <h2><a href="post.html">产品经理 游走于商业和技术之间</a></h2>
+             <time>January 23, 2013</time>
+             <p>一个产品经理的性格很奇特，做技术显得太外向，做销售又太内向。IT男觉得你是业务人员，市场销售觉得我们是技术人员。你总是这样，游走于商业与技术之间。</p>
+              </li>
+        <li>
+           
+     </li></ul>
+    </div><!-- /life -->
+     <div class="me">
+        <h1><a href="page.html">Me</a></h1>
+        <div class="aboutme">
+          <h2>徐彬</h2>
+          <p>binyoyo</p>
+          <p>广工计算机学院（俗称'计院'）</p>
+          <h2>爱生活、懂感恩、享受生活</h2>
+          <p>现阶段最成功的事：我不是单身！woo！哈哈。。。</p>
+          <p>每天提醒自己感谢每一个陪伴过你的人</p>
+          <p>Qq:160413701</p>
+          <p>Email:qqxubin963@gmail.com</p>
+          <p>Github:https://github.com/binyoyo</p>
+        </div><!-- / -->           
+     </li></ul>
+    </div><!-- /what I do -->
+</div>
+<!-- /主框架 -->
+<script src="js/index.js"></script>
+</body>
+</html>
